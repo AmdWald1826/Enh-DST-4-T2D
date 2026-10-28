@@ -1,0 +1,19 @@
+\begin{table}[!ht]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Variants of the fusion scheme: accuracy and Brier score (mean over cross-validation). Simulated corpus: development corpus (seed 0). Variants V0--V5 were fixed before the runs; E1--E4 and P1--P2 were added after seeing results and are exploratory. A dash means that the variant was not run on that data set.}\label{tab:ablation}
+\begin{tabular}{lcccccc}\hline
+ & \multicolumn{2}{c}{Simulated} & \multicolumn{2}{c}{Pima} & \multicolumn{2}{c}{NHANES}\\
+ Variant & Acc. & Brier & Acc. & Brier & Acc. & Brier\\\hline
+V0 Dempster (baseline) & 0.828 & 0.382 & 0.744 & 0.477 & 0.587 & 0.657 \\
+V1 + learned global discount & 0.828 & 0.382 & -- & -- & -- & -- \\
+V2 Yager's rule & 0.828 & 0.399 & -- & -- & -- & -- \\
+V3 Yager + discount & 0.828 & 0.399 & -- & -- & -- & -- \\
+V4 redundancy correction + discount & 0.829 & 0.480 & -- & -- & -- & -- \\
+V5 Yager + redundancy + discount & 0.829 & 0.484 & -- & -- & -- & -- \\
+E1 plausibility transform & 0.828 & 0.493 & -- & -- & -- & -- \\
+E2 E1 + redundancy & 0.829 & 0.578 & -- & -- & -- & -- \\
+E3 no double count of ignorance & 0.848 & 0.263 & 0.750 & 0.377 & 0.580 & 0.607 \\
+E4 E3 + plausibility transform & 0.848 & 0.286 & -- & -- & -- & -- \\
+P1 E3 + class prior ($s\le1$) & -- & -- & 0.755 & 0.360 & 0.567 & 0.516 \\
+P2 E3 + class prior ($s\le.75$) & -- & -- & 0.755 & 0.360 & 0.572 & 0.526 \\
+\hline\end{tabular}
+\end{table}

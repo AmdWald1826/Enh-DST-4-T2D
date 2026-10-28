@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or the associated results, please cite the manuscript and this repository."
+title: "Dempster-Shafer Evidence Fusion for Type 2 Diabetes Screening: code, protocols and results"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Berber
+    given-names: Elmehdi
+    affiliation: "Computer Science Department, Ibn Khaldoun University, Tiaret, Algeria"
+  - family-names: Boualem
+    given-names: Adda
+    affiliation: "Computer Science Department, Ibn Khaldoun University, Tiaret, Algeria"
+license: MIT
+# To be completed by the authors after the first release:
+# repository-code: "https://github.com/<account>/dst-t2d-screening"
+# doi: "10.5281/zenodo.<number>"
